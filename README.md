@@ -1,0 +1,2 @@
+# NoweTechnologie
+Repository for school
