@@ -1,0 +1,4 @@
+Moduły zewnętrzne wymagane do poprawnego działania skryptu:
+  1. mysql connector
+Instlacja modułów:
+  1. pip install mysl.connector
