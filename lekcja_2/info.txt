@@ -1,3 +1,4 @@
+Python wersja: 3.8+
 Moduły zewnętrzne wymagane do poprawnego działania skryptu:
   1. mysql connector
 Instlacja modułów:
