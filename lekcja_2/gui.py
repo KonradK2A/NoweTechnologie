@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk, Frame, Entry, Label, Button
 from _tkinter import TclError
 import ctypes
 
@@ -9,6 +9,8 @@ class GuiAuthorize:
         rootDescription = "Authorization - NT-L2"
         self.RootWindow = Tk(className=rootDescription)
         self.RootWindow.geometry("420x150")
+        # window ICONS
+        self.RootWindow.iconbitmap("icon.ico")
         # window FRAME
         self.loginFrame: Frame = Frame(self.RootWindow)
         self.loginFrame.grid()
@@ -104,6 +106,8 @@ class GuiUnauthorized:
         rootDescription = "Authorization failed - NT-L2"
         self.RootWindow = Tk(className=rootDescription)
         self.RootWindow.geometry("250x150")
+        # window ICONS
+        self.RootWindow.iconbitmap("icon.ico")
         # window FRAME
         self.windowFrame: Frame = Frame(self.RootWindow)
         self.windowFrame.grid()
@@ -129,7 +133,8 @@ class GuiUserItems:
         # window ROOT
         rootDescription = f"{login}'s cars - NT-L2"
         self.RootWindow = Tk(className=rootDescription)
-        # self.RootWindow.geometry("250x150")
+        # window ICONS
+        self.RootWindow.iconbitmap("icon.ico")
         # window FRAME
         self.windowFrame: Frame = Frame(self.RootWindow)
         self.windowFrame.grid()

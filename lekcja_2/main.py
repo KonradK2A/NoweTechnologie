@@ -7,17 +7,17 @@ from database_manager import *
 # TODO edit creating account
 
 
-def authentication(isRegister: bool,
+def authentication(is_register: bool,
                    login: str,
                    password: str
                    ):
 
-    if isRegister:
+    if is_register:
         if databaseManager.connection_create_account(login, password):
-            return True
+            return True, login
         else:
             return False
-    elif not isRegister:
+    elif not is_register:
         if databaseManager.connection_login(login, password):
             return True, login
         else:
@@ -43,10 +43,7 @@ if __name__ == '__main__':
                                   values[2])
 
     if isAuthorized:
-        if type(isAuthorized) is tuple:
-            show_user_items(isAuthorized[1])
-        else:
-            show_user_items(isAuthorized)
+        show_user_items(isAuthorized[1])
     else:
         guiUnauthorized = GuiUnauthorized()
         guiUnauthorized.grid_unauthorized()
