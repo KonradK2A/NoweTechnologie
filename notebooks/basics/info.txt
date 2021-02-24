@@ -1,0 +1,8 @@
+To jest plik Jupyter Notebook.
+Do działania wymaga zainstalowanego pythona 3.8 lub nowszego. 
+Aby go uruchomić można: 
+  wykorzystać narzędzie ze strony 
+      https://jupyter.org lub 
+  zainstalować wtyczkę do Visual Studio Code 
+      https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
+Miłej zabawy. 
